@@ -1,12 +1,22 @@
-import React from 'react';
+import React, {useState, useEffect}from 'react';
 import './index.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Index from './Components/Index/Index.component'
+import Loading from './Components/Loading/Loading.component';
+import Index from './Components/Index/Index.component';
 import Navbar from './Components/Index/Navbar/Navbar.component';
 
 function App() {
+  const [Load , setLoading] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading({Load:true});
+    }, 2000);
+  },[setLoading]);
+
   return (
     <div className="">
+      { Load ? 
       <Router>
         <Navbar/>
         <Switch>
@@ -15,6 +25,8 @@ function App() {
           <Route exact path="/galeria" component=""/>
         </Switch>
       </Router>
+      : <Loading/>
+      }
     </div>
   );
 }

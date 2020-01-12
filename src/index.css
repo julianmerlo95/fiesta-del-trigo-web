@@ -5,9 +5,351 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
-
+@media (max-width: 425px) {
+  body{
+    width: 425px;
+  }
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/*DEFAULT CONTAINER*/
+/*DIVIDER*/
+.container-divider{
+  width: 100%;
+  height: 100px;
+  background-color: #e77838;
+  background-image: linear-gradient(315deg, #ffae0b 0%, #f34333ec 74%);
+  text-align: center;
+}
+.container-text{
+  padding: 4px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color:white;
+}
+@media (max-width: 425px) {
+  .container-divider{
+    width: 425px;
+  }
+  .container-text{
+    font-size: 20px;
+    padding: 12px;
+  }
+}
+/*NAVBAR*/
+.container-navbar{
+  background:black;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  display: flex;
+  opacity: 0.5;
+  z-index: 10000;
+}
+.logo-navbar{
+  width: 130px;
+  height: 100%;
+}
+.container-list{
+  display: flex;
+  background: black;
+  color: white;
+  width: 50%;
+  padding: 20px;
+}
+.container-list li{
+  text-decoration: none;
+  list-style: none;
+  font-size: 23px;
+  margin-left: 50px;
+  color:red;
+}
+.container-list li{
+  cursor: pointer;
+}
+@media (max-width: 1331px) {
+  .container-navbar{
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .container-list li{
+    font-size: 20px;
+  }
+}
+/*HEADER*/
+.container-img img{
+  background-size: cover;
+  width: 100%;
+  height: 950px;
+  position: relative;
+}
+.container-title-header{
+  position: absolute;
+}
+.container-date-title-header{
+  margin-top: 330px;
+  margin-left: 17%;
+  color:white;
+}
+.container-date-title-header h2{
+  font-size: 55px;
+  text-transform: uppercase;
+}
+.container-date-title-header h3{
+  font-size: 40px;
+}
+@media (max-width: 600px) {
+  .container-img img{
+    width: 425px;
+    background-image: url('./Img/fondoPosibleChico.jpg');
+  }
+  .container-date-title-header h2{
+    font-size: 25px;
+  }
+  .container-date-title-header h3{
+    font-size: 23px;
+  }
+}
+/*MAIN*/
+.container-main{
+  width: 80%;
+  margin:0 auto;
+  padding: 10%;
+}
+.container-video{
+  width: 100%;
+}
+iframe{
+  width: 100%;
+  height: 600px;
+  /* margin-left: 10%; */
+  border-radius:10px;
+}
+@media (max-width: 425px) {
+  iframe{
+    width: 100%;
+  }
+}
+/*IMG SLIDER DOUBLE*/
+.container-img-slider-doble{
+  display: flex;
+  width: 100%;
+}
+.container-img-slider-one img, .container-img-slider-two img{
+  width: 100%;
+}
+.container-img-slider-one{
+  width: 100%;
+  height: 650px;
+  background-image: url('./Img/fondoLbc.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.title-banda{
+  color:white;
+  position: absolute;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+.container-img-slider-two{
+  width: 100%;
+  height: 650px;
+  background-image: url('./Img/fondoLaMonada.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+@media (max-width: 425px) {
+  .title-banda{
+    font-size: 15px;
+  }
+}
+/*ABOUT US BANDAS*/
+.about-us-banda{
+  text-align: center;
+  display: flex;
+}
+.container-banda-left{
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.container-banda-right, .container-banda-left{
+  width: 50%;
+  color:white;
+  font-size: 23px;
+}
+.container-banda-right ul li{
+  text-decoration: none;
+  list-style: none;
+  margin-top: 10px;
+}
+.container-banda-left ul li{
+  text-decoration: none;
+  list-style: none;
+  margin-top: 10px;
+}
+@media (max-width: 425px) {
+  .about-us-banda{
+    width: 425px;
+    display: inline;
+  }
+  .container-banda-right, .container-banda-left{
+    width: 90%;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .container-banda-right h4 ,.container-banda-left h4{
+    font-size: 20px;
+    margin-left: 10%;
+  }
+}
+/*GALERY IMG*/
+.container-galery-img{
+  margin-top: 50px;
+  width: 100%;
+  height: 1400px;
+}
+.container-img{
+  display: flex;
+}
+.container-img-galery img{
+  width: 30%;
+  padding: 25px;
+  margin:0 auto;
+  transition: 0.5s;
+}
+.container-img-galery img:hover{
+  cursor: pointer;
+  width: 31.5%;
+  transition: 0.5s;
+}
+@media (max-width: 600px) {
+  .container-galery-img{
+    margin-top: 50px;
+    width: 100%;
+    height: 2800px;
+  }
+  .container-img-galery img{
+    width: 87%;
+  }
+}
+/*IMG SLIDER*/
+.container-img-slider{
+  width: 100%;
+}
+.container-img-slider{
+  width: 100%;
+  height: 650px;
+  background-image: url('./Img/fondoImgSlider1.jpg');
+  background-attachment: fixed;
+}
+@media (max-width: 600px) {
+  .container-img-slider{
+    height: 250px;
+  }
+}
+/*ABOUT US*/
+.container-abouts-us{
+  width: 100%;
+  height: 550px;
+  display: flex;
+  background-color: black;
+}
+.container-img-about{
+  width: 55%;
+}
+.container-img-about img{
+  width: 100%;
+  height: 100%;
+}
+.container-text-about{
+  width: 45%;
+  text-align: center;
+  background-color: black;
+  padding: 15px;
+}
+.container-text-about h3{
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.container-text-about h3,.container-text-about p{
+  margin-top: 75px;
+  color:white;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .container-abouts-us{
+    display: none;
+  }
+}
+/*ARTICLE MAPS*/
+.container-maps{
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.container-img-maps{
+  margin-left: 25px;
+}
+.container-img-maps img{
+  border-radius: 10px;
+}
+input{
+  width: 60%;
+  padding: 5px;
+  margin-top: 10px;
+}
+textArea{
+  width: 62%;
+  margin-top:10px;
+  height: 100px;
+  border-radius: 5px;
+}
+.button-contacto{
+  width: 50%;
+  margin-top: 10px;
+  background-color: #f7762c;
+  background-image: linear-gradient(315deg, #ffae0b 0%, #f6323c 74%);
+  color:white;
+  font-size: 20px;
+  padding: 4px;
+  border-radius: 5px;
+}
+.button-contacto:hover{
+  cursor: pointer;
+  background-color: #f7762c;
+  background-image: linear-gradient(315deg, #ffae0b 0%, #ff000d 74%);
+  transition: 1s;
+}
+/*FOOTER*/
+.container-footer{
+  width: 100%;
+  height: 200px;
+  background: rgb(37, 37, 37);
+}
+.container-redes-sociales-footer{
+  display: flex;
+  width: 80%;
+  margin:0 auto;
+}
+.container-derechos-reservados-footer{
+  width: 60%;
+  padding: 75px;
+  color:white;
+}
+.container-icon{
+  width: 40%;
+  color:white;
+  margin-top: 40px;
+}
+.container-icon h3{
+  margin-left: 45px;
 }

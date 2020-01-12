@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import FondoHeader from '../../Img/logoHeader.jpeg';
 
 function Navbar(){
@@ -10,13 +10,16 @@ function Navbar(){
       </div>
       <ul className="container-list">
         <li>
-          <Link style={{ textDecoration: 'none', color:'white' }} >Home</Link>
+          <Link style={{ textDecoration: 'none', color:'white' }} >Inicio</Link>
         </li>
         <li>
           <Link style={{ textDecoration: 'none', color:'white'  }}>Eventos</Link>
         </li>
         <li>
           <Link style={{ textDecoration: 'none', color:'white'  }}>Galeria</Link>
+        </li>
+        <li>
+          <Link style={{ textDecoration: 'none', color:'white'  }}>Ubicacion</Link>
         </li>
         <li>
           <Link style={{ textDecoration: 'none', color:'white'  }}>Contacto</Link>

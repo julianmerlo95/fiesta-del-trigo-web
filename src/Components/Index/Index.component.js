@@ -1,12 +1,12 @@
 import React from 'react'
-import Main from './Main.component';
+import VideoMain from './VideoMain.component';
 import Header from './Header.component';
 import ArticleMaps from './ArticleMaps.component';
 import Footer from './Footer.component';
 import {DividerComponent} from '../Default/divider.controller';
-import ImgSlider from './ImgSlaider/imgSlaider.component';
-import ImgSliderBandaOne from './ImgSlaider/imgSlaiderBanda1.component';
-import ImgSliderBandaTwo from './ImgSlaider/imgSlaiderBanda2.component';
+import ImgSliderQueen from './ImgSlaider/imgSlaiderQueen.component';
+import ImgSliderBandaOne from './ImgSlaider/imgSlaiderBandaOne.component';
+import ImgSliderBandaTwo from './ImgSlaider/imgSlaiderBandaTwo.component';
 import AboutUs from './AboutUs.component';
 import AboutUsBanda from './AboutUsBanda.component';
 import GaleryImg from './GaleryImg/GaleryImg';
@@ -16,16 +16,16 @@ function Index(){
     <div className="container-header">
       <Header/>
       <DividerComponent text="Fiesta Provincial del Trigo"/>
-      <Main/>
-      <ImgSliderBandaOne/>
+      <VideoMain/>
       <DividerComponent text="Cronograma de Eventos"/>
+      <ImgSliderBandaOne/>
       <AboutUsBanda/>
       <ImgSliderBandaTwo/>
       <DividerComponent text="Galeria de Imagenes "/>
       <GaleryImg/>
-      <ImgSlider/>
+      <ImgSliderQueen/>
       <AboutUs/>
-      <ImgSlider/>
+      <ImgSliderQueen/>
       <DividerComponent text="Contacto y Ubicacion"/>
       <ArticleMaps/>
       <Footer/>

@@ -1,11 +1,11 @@
 import React from 'react';
-import FondoHeader from '../../Img/fondoHeader2.jpg';
+import fondoAboutUs from '../../Img/fondoAboutUs.jpg';
 
 function AboutUs(){
   return(
     <div className="container-abouts-us">
       <div className="container-img-about">
-        <img src={FondoHeader}></img>
+        <img src={fondoAboutUs}></img>
       </div>
       <div className="container-text-about">
         <h3>Sobre Nuestra Fiesta</h3>

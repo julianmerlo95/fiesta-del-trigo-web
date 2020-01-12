@@ -9,7 +9,7 @@ body {
 }
 @media (max-width: 425px) {
   body{
-    width: 425px;
+    width: 100%;
   }
 }
 code {
@@ -20,24 +20,24 @@ code {
 /*DIVIDER*/
 .container-divider{
   width: 100%;
-  height: 100px;
+  height: 77px;
   background-color: #e77838;
   background-image: linear-gradient(315deg, #ffae0b 0%, #f34333ec 74%);
   text-align: center;
 }
 .container-text{
-  padding: 4px;
-  font-size: 25px;
+  padding: 1px;
+  font-size: 22px;
   text-transform: uppercase;
   color:white;
 }
 @media (max-width: 425px) {
   .container-divider{
-    width: 425px;
+    width: 100%;
+    height: 60px;
   }
   .container-text{
-    font-size: 20px;
-    padding: 12px;
+    font-size: 16px;
   }
 }
 /*NAVBAR*/
@@ -92,7 +92,7 @@ code {
   position: absolute;
 }
 .container-date-title-header{
-  margin-top: 330px;
+  margin-top: 35%;
   margin-left: 17%;
   color:white;
 }
@@ -103,16 +103,29 @@ code {
 .container-date-title-header h3{
   font-size: 40px;
 }
-@media (max-width: 600px) {
-  .container-img img{
-    width: 425px;
-    background-image: url('./Img/fondoPosibleChico.jpg');
-  }
+@media (max-width: 1024px) {
   .container-date-title-header h2{
-    font-size: 25px;
+    margin-top: 40%;
+    font-size: 45px;
   }
   .container-date-title-header h3{
-    font-size: 23px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .container-img{
+    width: 100%;
+  }
+  .container-img img{
+    width: 100%;
+    height: 550px;
+  }
+  .container-date-title-header h2{
+    margin-top: 40%;
+    font-size: 24px;
+  }
+  .container-date-title-header h3{
+    font-size: 20px;
   }
 }
 /*MAIN*/
@@ -131,6 +144,7 @@ iframe{
   border-radius:10px;
 }
 @media (max-width: 425px) {
+  
   iframe{
     width: 100%;
   }
@@ -159,7 +173,7 @@ iframe{
   text-transform: uppercase;
   margin-left: 50px;
 }
-.container-img-slider-two{
+.container-img-slider-two {
   width: 100%;
   height: 650px;
   background-image: url('./Img/fondoLaMonada.jpg');
@@ -168,9 +182,29 @@ iframe{
   background-size: cover;
   position: relative;
 }
+.display-none-smartphone-display-inline{
+  display: none;
+}
+@media (max-width: 1024px) {
+  .container-img-slider-one{
+    width: 100%;
+  }
+}
 @media (max-width: 425px) {
+  .container-img-slider-one, .container-img-slider-two{
+    display: none;
+  }
+  .display-none-smartphone-display-inline{
+    display: inline;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .display-none-smartphone-display-inline img{
+    width: 100%;
+  }
   .title-banda{
     font-size: 15px;
+    margin-top: 8%;
   }
 }
 /*ABOUT US BANDAS*/
@@ -179,9 +213,9 @@ iframe{
   display: flex;
 }
 .container-banda-left{
-  margin-top: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
+
 .container-banda-right, .container-banda-left{
   width: 50%;
   color:white;
@@ -197,10 +231,18 @@ iframe{
   list-style: none;
   margin-top: 10px;
 }
+@media (max-width: 1024px) {
+  .container-banda-right{
+    margin-top:1.5%;
+  }
+}
 @media (max-width: 425px) {
   .about-us-banda{
     width: 425px;
     display: inline;
+  }
+  .container-banda-right{
+    margin-bottom: 10%;
   }
   .container-banda-right, .container-banda-left{
     width: 90%;
@@ -216,7 +258,7 @@ iframe{
 .container-galery-img{
   margin-top: 50px;
   width: 100%;
-  height: 1400px;
+  height: 100%;
 }
 .container-img{
   display: flex;
@@ -225,12 +267,39 @@ iframe{
   width: 30%;
   padding: 25px;
   margin:0 auto;
-  transition: 0.5s;
+  transition: 1s;
 }
 .container-img-galery img:hover{
   cursor: pointer;
   width: 31.5%;
-  transition: 0.5s;
+  transition: 1s;
+}
+
+@media (max-width: 1440px) {
+  .container-img-galery img{
+    width: 29%;
+    padding: 25px;
+    margin:0 auto;
+    transition: 0.5s;
+  }
+  .container-img-galery img:hover{
+    cursor: pointer;
+    width: 30%;
+    transition: 0.5s;
+  }
+}
+@media (max-width: 1024px) {
+  .container-img-galery img{
+    width: 28%;
+    padding: 25px;
+    margin:0 auto;
+    transition: 0.5s;
+  }
+  .container-img-galery img:hover{
+    cursor: pointer;
+    width: 29%;
+    transition: 0.5s;
+  }
 }
 @media (max-width: 600px) {
   .container-galery-img{
@@ -239,7 +308,12 @@ iframe{
     height: 2800px;
   }
   .container-img-galery img{
-    width: 87%;
+    width: 86%;
+  }
+  .container-img-galery img:hover{
+    cursor: pointer;
+    width: 87.5%;
+    transition: 0.5s;
   }
 }
 /*IMG SLIDER*/
@@ -253,6 +327,9 @@ iframe{
   background-attachment: fixed;
 }
 @media (max-width: 600px) {
+  .container-img-slider{
+    display: none;
+  }
   .container-img-slider{
     height: 250px;
   }
@@ -286,6 +363,20 @@ iframe{
   color:white;
   padding: 10px;
 }
+@media (max-width: 1024px) {
+  .container-text-about{
+    width: 45%;
+    text-align: center;
+    background-color: black;
+    padding: 5px;
+  }
+}
+.container-text-about h3{
+    margin-top: 10%;
+}
+.container-text-about p{
+  text-align: center;
+}
 @media (max-width: 600px) {
   .container-abouts-us{
     display: none;
@@ -295,12 +386,19 @@ iframe{
 .container-maps{
   margin-top: 50px;
   margin-bottom: 80px;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  background-color: black;
 }
 .container-img-maps{
+  width: 55%;
   margin-left: 25px;
 }
 .container-img-maps img{
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
 }
 input{
   width: 60%;
@@ -329,6 +427,29 @@ textArea{
   background-image: linear-gradient(315deg, #ffae0b 0%, #ff000d 74%);
   transition: 1s;
 }
+@media (max-width: 425px) {
+  .container-maps{
+    display: inline;
+  }
+  .container-img-maps{
+    margin-top: 7%;
+    width: 90%;
+  }
+  .container-img-maps img{
+    width: 100%;
+  }
+  .form{
+    width: 95%;
+    margin-bottom: 20%;
+  }
+  .form h3{
+    margin-left: 5%;
+  }
+  form{
+    width: 100%;
+    margin-left: 3%;
+  }
+}
 /*FOOTER*/
 .container-footer{
   width: 100%;
@@ -337,19 +458,44 @@ textArea{
 }
 .container-redes-sociales-footer{
   display: flex;
-  width: 80%;
-  margin:0 auto;
+  width: 100%;
 }
 .container-derechos-reservados-footer{
-  width: 60%;
-  padding: 75px;
+  width: 100%;
+  padding: 25px;
   color:white;
+  text-align: center;
+}
+.container-derechos-reservados-footer{
+  margin-top: 40px;
 }
 .container-icon{
-  width: 40%;
+  width: 100%;
   color:white;
   margin-top: 40px;
+  text-align: center;
 }
 .container-icon h3{
   margin-left: 45px;
+}
+@media (max-width: 425px) {
+  .container-redes-sociales-footer{
+    display: inline;
+    width: 100%;
+  }
+  .container-icon{
+    width: 100%;
+    font-size: 8px;
+  }
+  .container-icon h3{
+    margin-left: 10px;
+  }
+  .container-derechos-reservados-footer{
+    width: 85%;
+    font-size: 10px;
+    color:white;
+  }
+  .container-derechos-reservados-footer{
+    margin-left: 10px;
+  }
 }

@@ -1,15 +1,15 @@
 import React from 'react'
-import VideoMain from './VideoMain.component';
-import Header from './Header.component';
-import ArticleMaps from './ArticleMaps.component';
-import Footer from './Footer.component';
-import {DividerComponent} from '../Default/divider.controller';
-import ImgSliderQueen from './ImgSlaider/imgSlaiderQueen.component';
+import { DividerComponent } from '../Default/divider.controller';
+import Header from './Header/Header.component';
+import VideoMain from './Video/VideoMain.component';
 import ImgSliderBandaOne from './ImgSlaider/imgSlaiderBandaOne.component';
+import AboutUsBanda from './AboutUs/AboutUsBanda.component';
 import ImgSliderBandaTwo from './ImgSlaider/imgSlaiderBandaTwo.component';
-import AboutUs from './AboutUs.component';
-import AboutUsBanda from './AboutUsBanda.component';
 import GaleryImg from './GaleryImg/GaleryImg';
+import ImgSliderQueen from './ImgSlaider/imgSlaiderQueen.component';
+import AboutUs from './AboutUs/AboutUs.component';
+import ArticleMaps from './ArticleMaps/ArticleMaps.component';
+import Footer from './Footer/Footer.component';
 
 function Index(){
   return(
@@ -26,7 +26,7 @@ function Index(){
       <ImgSliderQueen/>
       <AboutUs/>
       <ImgSliderQueen/>
-      <DividerComponent text="Contacto y Ubicacion"/>
+      <DividerComponent text="Ubicacion y Contacto"/>
       <ArticleMaps/>
       <Footer/>
     </div>

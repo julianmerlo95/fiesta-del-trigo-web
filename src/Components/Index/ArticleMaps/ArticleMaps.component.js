@@ -1,5 +1,5 @@
 import React from 'react';
-import fondoMaps from '../../Img/fondoMaps.png'
+import fondoMaps from '../../../Img/fondoMaps.png'
 
 function ArticleMaps(){
   return(

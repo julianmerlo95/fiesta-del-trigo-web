@@ -1,5 +1,5 @@
 import React from 'react';
-import fondoAboutUs from '../../Img/fondoAboutUs.jpg';
+import fondoAboutUs from '../../../Img/fondoAboutUs.jpg';
 
 function AboutUs(){
   return(

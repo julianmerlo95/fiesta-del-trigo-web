@@ -1,5 +1,5 @@
 import React from 'react'
-import FondoHeader from '../../Img/fondoPosible1.jpg';
+import FondoHeader from '../../../Img/fondoPosible1.jpg';
 
 function Header(){
   return(

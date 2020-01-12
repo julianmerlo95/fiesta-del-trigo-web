@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FondoHeader from '../../Img/logoHeader.jpeg';
+import FondoHeader from '../../../Img/logoHeader.jpeg';
 
 function Navbar(){
   return(

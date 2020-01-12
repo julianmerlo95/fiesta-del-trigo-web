@@ -31,10 +31,14 @@ code {
   height: 120px;
   animation: spin 1.5s linear infinite;
 }
-
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+@media (max-width: 425px) {
+  .container-load{
+    margin-top: 80%;
+  }
 }
 /*DIVIDER*/
 .container-divider{
@@ -159,7 +163,6 @@ code {
 iframe{
   width: 100%;
   height: 600px;
-  /* margin-left: 10%; */
   border-radius:10px;
 }
 @media (max-width: 425px) {
@@ -239,6 +242,7 @@ iframe{
   width: 50%;
   color:white;
   font-size: 23px;
+  text-transform: uppercase;
 }
 .container-banda-right ul li{
   text-decoration: none;
@@ -324,7 +328,7 @@ iframe{
   .container-galery-img{
     margin-top: 50px;
     width: 100%;
-    height: 2800px;
+    height: 100%;
   }
   .container-img-galery img{
     width: 86%;

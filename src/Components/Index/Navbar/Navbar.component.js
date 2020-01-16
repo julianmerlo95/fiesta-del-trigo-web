@@ -25,6 +25,13 @@ function Navbar(){
           <Link style={{ textDecoration: 'none', color:'white'  }}>Contacto</Link>
         </li>
       </ul>
+      <div className="container-hambur">
+        <ul className="list-hambur">
+          <li>___</li>
+          <li>__</li>
+          <li>_</li>
+        </ul>
+      </div>
     </div> 
   )
 }

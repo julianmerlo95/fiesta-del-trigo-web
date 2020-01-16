@@ -12,7 +12,6 @@ function ArticleMaps(){
         <img src={fondoMaps}></img>
       </div>
       <div className="container-text-about form">
-        <h3>Contacto </h3>
       <form>
         <div>
           <input 

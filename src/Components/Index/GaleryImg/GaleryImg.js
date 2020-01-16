@@ -17,8 +17,7 @@ function GaleryImg(){
         data-aos="fade-right"
         data-aos-offset="100"
         data-aos-easing="ease-in-sine"
-        data-aos-delay="250"
-      >
+        data-aos-delay="250">
         <img src={img1}></img>
         <img src={img2}></img>
         <img src={img3}></img>

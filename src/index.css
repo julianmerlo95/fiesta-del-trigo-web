@@ -1,12 +1,14 @@
 body {
   margin: 0;
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-repeat:no-repeat;
   background-color: black;
-}
+  }
 @media (max-width: 425px) {
   body{
     width: 100%;
@@ -21,7 +23,7 @@ code {
 .container-load{
   display: flex;
   justify-content: center;
-  margin-top: 20%;
+  margin-top: 13%;
 }
 .loader {
   border: 10px solid #f3f3f3; /* Light grey */
@@ -88,20 +90,57 @@ code {
   text-decoration: none;
   list-style: none;
   font-size: 23px;
-  margin-left: 50px;
+  margin-left: 7%;
   color:red;
 }
 .container-list li{
   cursor: pointer;
 }
-@media (max-width: 1331px) {
-  .container-navbar{
-    display: none;
-  }
+.list-hambur{
+  display: none;
+  color: white;
 }
 @media (max-width: 425px) {
+  .container-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    height: 70px;
+  }
   .container-list li{
-    font-size: 20px;
+    font-size: 18px;
+    margin-left: 3%;
+    margin-right: 3.5%;
+  }
+  .container-navbar img{
+    display: none;
+  }
+  .container-list{
+    display: none;
+  }
+  .container-hambur{
+    width: 100%;
+    display: flex;
+  }
+  .list-hambur{
+    display: inline;
+    list-style: none;
+    text-align: left;
+  }
+  .list-hambur li{
+    
+    height: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .container-navbar{
+    background:black;
+    width: 100%;
+    height: 85px;
+  }
+  .container-list li{
+    font-size: 16px;
+    margin-left: 3%;
   }
 }
 /*HEADER*/
@@ -120,11 +159,11 @@ code {
   color:white;
 }
 .container-date-title-header h2{
-  font-size: 55px;
+  font-size: 60px;
   text-transform: uppercase;
 }
 .container-date-title-header h3{
-  font-size: 40px;
+  font-size: 45px;
 }
 @media (max-width: 1024px) {
   .container-date-title-header h2{
@@ -144,7 +183,7 @@ code {
     height: 550px;
   }
   .container-date-title-header h2{
-    margin-top: 40%;
+    margin-top: 68%;
     font-size: 24px;
   }
   .container-date-title-header h3{
@@ -233,16 +272,20 @@ iframe{
 .about-us-banda{
   text-align: center;
   display: flex;
+  background-color: rgb(37, 37, 37);
 }
 .container-banda-left{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
-
+.container-banda-left h4, .container-banda-right h4{
+  margin-left: 4.5%;
+}
 .container-banda-right, .container-banda-left{
   width: 50%;
   color:white;
   font-size: 23px;
   text-transform: uppercase;
+  padding: 1%;
 }
 .container-banda-right ul li{
   text-decoration: none;
@@ -255,6 +298,9 @@ iframe{
   margin-top: 10px;
 }
 @media (max-width: 1024px) {
+  .about-us-banda{
+    background-color: rgb(37, 37, 37);
+  }
   .container-banda-right{
     margin-top:1.5%;
   }
@@ -263,6 +309,7 @@ iframe{
   .about-us-banda{
     width: 425px;
     display: inline;
+    background-color: rgb(37, 37, 37);
   }
   .container-banda-right{
     margin-bottom: 10%;
@@ -374,7 +421,6 @@ iframe{
 .container-text-about{
   width: 45%;
   text-align: center;
-  background-color: black;
   padding: 15px;
 }
 .container-text-about h3{
@@ -390,7 +436,6 @@ iframe{
   .container-text-about{
     width: 45%;
     text-align: center;
-    background-color: black;
     padding: 5px;
   }
 }
@@ -412,7 +457,6 @@ iframe{
   width: 100%;
   height: 550px;
   display: flex;
-  background-color: black;
 }
 .container-img-maps{
   width: 55%;
@@ -424,13 +468,17 @@ iframe{
   height: 100%;
 }
 input{
-  width: 60%;
+  width: 80%;
+  height: 40px;
   padding: 5px;
-  margin-top: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 16px;
 }
 textArea{
-  width: 62%;
-  margin-top:10px;
+  width: 81%;
+  margin-top:20px;
+  margin-bottom:20px;
   height: 100px;
   border-radius: 5px;
 }
@@ -441,7 +489,7 @@ textArea{
   background-image: linear-gradient(315deg, #ffae0b 0%, #f6323c 74%);
   color:white;
   font-size: 20px;
-  padding: 4px;
+  padding: 10px;
   border-radius: 5px;
 }
 .button-contacto:hover{
@@ -463,7 +511,8 @@ textArea{
   }
   .form{
     width: 95%;
-    margin-bottom: 20%;
+    margin-top: 10%;
+    margin-bottom: 16%;
   }
   .form h3{
     margin-left: 5%;
@@ -471,6 +520,18 @@ textArea{
   form{
     width: 100%;
     margin-left: 3%;
+  }
+  input{
+    width: 84%;
+    height: 40px;
+
+  }
+  textArea{
+    width: 85%;
+
+  }
+  .button-contacto{
+    width: 70%;
   }
 }
 /*FOOTER*/
@@ -514,7 +575,7 @@ textArea{
     margin-left: 10px;
   }
   .container-derechos-reservados-footer{
-    width: 85%;
+    width: 82%;
     font-size: 10px;
     color:white;
   }
